@@ -28,16 +28,6 @@
                     <dt class="col-sm-2">
                         @Html.DisplayNameFor(model => model.logoPath)
                     </dt>
-                    <dd class="col-sm-10">
-                        @if (@Html.DisplayNameFor(model => model.logoPath) == null)
-                        {
-                            <img src="/img/bit-special-icoon.png" class="rounded-circle" height="125" width="125" asp-append-version="true" />
-                        }
-                        else
-                        {
-                            <img src="@Model.logoPath" class="rounded-circle" height="125" width="125" asp-append-version="true" />
-                        }
-                    </dd>
                     <dt class="col-sm-2">
                         @Html.DisplayNameFor(model => model.date)
                     </dt>

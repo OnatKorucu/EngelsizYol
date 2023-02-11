@@ -265,7 +265,7 @@ iframe {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
-    flex-direction: row-reverse;
+    justify-content: center;
 }
 
 /*==================================================================
@@ -277,7 +277,6 @@ iframe {
     background-position: center;
     position: relative;
     z-index: 1;
-    background-image: url('/img/Gamification-serious-game.jpg');
 }
 
     .login100-more_bg_index::before {
@@ -299,7 +298,6 @@ iframe {
     background-position: center;
     position: relative;
     z-index: 1;
-    background-image: url('/img/Slider-HackGame.jpeg');
 }
 
     .login100-more_bg_signUp::before {
@@ -321,7 +319,6 @@ iframe {
     background-position: center;
     position: relative;
     z-index: 1;
-    background-image: url('/img/slider_image.jpeg');
 }
 
     .login100-more_bg_forgot::before {
@@ -339,11 +336,11 @@ iframe {
 /*==================================================================
 [ Form ]*/
 .login100-form {
-    width: 560px;
+    width: 100%;
     min-height: 100vh;
     display: block;
     background-color: #f7f7f7;
-    padding: 173px 55px 55px 55px;
+    padding: 55px 55px 55px 55px;
 }
 
 .login100-form-title {

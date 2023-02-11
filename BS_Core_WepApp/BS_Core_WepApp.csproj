@@ -98,13 +98,17 @@
     <None Include="wwwroot\js\fonts\poppins\Poppins-SemiBoldItalic.ttf" />
     <None Include="wwwroot\js\fonts\poppins\Poppins-Thin.ttf" />
     <None Include="wwwroot\js\fonts\poppins\Poppins-ThinItalic.ttf" />
-    <None Include="wwwroot\img\Gamification-serious-game.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="Firebase.Storage">
       <HintPath>C:\Users\Ruhim\Desktop\Firebase.Storage.dll</HintPath>
     </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ScreenShot\" />
+    <Folder Include="wwwroot\img\" />
   </ItemGroup>
 
 </Project>
