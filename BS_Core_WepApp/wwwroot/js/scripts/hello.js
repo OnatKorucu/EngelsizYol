@@ -1,5 +1,5 @@
 module.exports = function (callback, name) {
-    var result = "Hello " + name;
-    callback(null, "Hello " + name);
+    var result = "Hello ".concat(name);
+    callback(null, "Hello ".concat(name));
 };
 //# sourceMappingURL=hello.js.map
