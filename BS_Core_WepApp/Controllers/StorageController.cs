@@ -25,7 +25,7 @@ namespace BS_Core_WepApp.Controllers
         {
             _javascriptService = javaScriptService;
             _env = env;
-            string keyPath = Path.Combine(_env.ContentRootPath, "Key\\nodejs-tutorial-4dbfe-firebase-adminsdk-muv6v-7944c5c977.json");
+            string keyPath = Path.Combine(_env.ContentRootPath, "Key\\acikyolbul-firebase-adminsdk-dqlww-a3564a2674.json");
             Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", keyPath);
             firestoreDb = FirestoreDb.Create(cls_keys.projectId);
         }
@@ -41,9 +41,11 @@ namespace BS_Core_WepApp.Controllers
                 return RedirectToAction("Index", "Home");
             }
         }
+        
         [HttpGet]
         public async Task<IActionResult> Index(UserModel userModel)
         {
+
             string _strToken = HttpContext.Session.GetString("bt_userToken");
             Query userquery = firestoreDb.Collection("fthTest-users");
             QuerySnapshot documentSnapshots = await userquery.GetSnapshotAsync();
@@ -65,6 +67,7 @@ namespace BS_Core_WepApp.Controllers
             List<UserModel> sortUserList = lstUser.OrderBy(x => x.date).ToList();
             return View(sortUserList);
         }
+        
 
         public IActionResult Create()
         {
